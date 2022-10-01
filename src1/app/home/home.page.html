@@ -1,0 +1,108 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <img src="assets/imgs/mainlogo.png" width="45%" slot="start"/>
+    <img src="assets/imgs/fame-logo.png" width="45%" slot="end" style="margin-right: 1.5%;"/>
+ </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card >
+    <ion-toolbar style="--background: #ebe3e3">
+      <ion-menu-button autoHide="false" slot="start"  width="20px;"></ion-menu-button>
+      <ion-title>
+        {{'About'| translate}}
+      </ion-title>
+      <div style="margin-right: 1.5%;" slot="end">
+      <img src="assets/imgs/home.svg" width="25px" />
+      <img *ngIf="eng" src="assets/imgs/hIcon.png"  width="25px" (click)="myLanguageChange('hindi')" />
+      <img *ngIf="!eng" src="assets/imgs/eicon.png" height="26px"  width="25px" (click)="myLanguageChange('en')" />
+    </div>
+      <!-- <ion-icon name="swap-horizontal-outline" slot="end" width="40px"></ion-icon>
+      <ion-icon name="home-outline" slot="end" width="40px"></ion-icon> -->
+    </ion-toolbar>
+  </ion-card>
+  <ion-card>
+      <ion-row>
+        <ion-col size="3" style="border:2px solid black;background:#536ef3;color:white">
+           {{'whatsNew'|translate}}
+        </ion-col>
+        <ion-col  size="9" style="border:2px solid black">
+          
+        </ion-col>
+      </ion-row>
+  </ion-card>
+  <div>
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <img src="assets/imgs/electriccar.png">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/karm.png">
+      </ion-slide>
+    </ion-slides>
+
+
+
+    <!-- <carousel>
+      <div class="carousel-cell">
+          <img src="assets/imgs/electriccar.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="assets/imgs/electriccar.png"  >
+    </div>
+  </carousel> -->
+
+
+    <!-- <img src="assets/imgs/electriccar.png" width="92%"/> -->
+  </div>
+<div style="padding:0 5%">
+  <ion-row>
+    <ion-col  size="7.5">
+      <img src="assets/imgs/admin.png" width="30px" style="margin-right: 1.2%;"/>
+         <span style="border:2px solid black;padding: 1.2%; width:57%;height: 34px;" [routerLink]="['/login']" >{{'nab'|translate}}</span> 
+    </ion-col>
+    <ion-col  size="4.5" >
+      <img src="assets/imgs/oem.png" width="30px" style="margin-right: 1.2%;"/>
+        <span style="border:2px  solid black;padding: 1.1%; width:72%;height: 34px;" [routerLink]="['/login']"> {{'oem'|translate}} </span>
+    </ion-col>
+  </ion-row>
+  <br/>
+  <ion-row>
+    <ion-col  size="7.5" >
+      <img src="assets/imgs/agency.png" width="30px" style="margin-right: 1.2%;"/>
+         <span style="border:2px  solid black;padding: 1.2%; width:53%;" [routerLink]="['/login']"> {{'agency'|translate}}</span>
+    </ion-col>
+    <ion-col  size="4" >
+      <img src="assets/imgs/car_dealer.png" width="30px" style="margin-right: 1.2%;"/>
+         <span style="border:2px solid black;padding: 1.2%; width:72%;height: 34px;" [routerLink]="['/login']">{{'dealer'|translate}}</span>
+    </ion-col>
+  </ion-row>
+</div>
+<div>
+  <ion-row>
+    <ion-col size="9"></ion-col>
+    <ion-col size="3"><ion-button (click)="showGraph()">{{'graph'|translate}}</ion-button></ion-col>
+   <!-- <ion-col size="3"> 
+     <img  height="50px" src="../../assets/imgs/graph.gif"/>
+   </ion-col> -->
+  </ion-row>
+  <ion-row>
+    <ion-col size="3.6" style="border:2px solid black;margin-left:2%;background:rgb(117, 184, 17);padding:0">
+      <p style="text-align: center;">157</p>
+      <p style="text-align: center;">{{'AvailableModel'|translate}}</p>
+    </ion-col>
+    <ion-col size="3.6" style="margin-left:2%;border:2px solid black;background:rgb(57 212 247);padding:0">
+      <p style="text-align: center;">136835</p>
+      <p style="text-align: center;"> {{'VehicleSold'|translate}}</p>
+    </ion-col>
+    <ion-col size="3.6" style="margin-left:2%;border:2px solid black;background:rgb(248, 170, 26);padding:0">
+      <p style="text-align: center;">448.51 {{'Crore'|translate}}</p>
+      <p style="text-align: center;">{{'TotalAmount'|translate}}</p>
+    </ion-col>
+  </ion-row>
+</div>
+  <!-- <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div> -->
+</ion-content>

@@ -1,0 +1,42 @@
+<ion-app>
+
+
+  <ion-menu menu-id="myMenu" contentId="main-content" side="start" class="my-custom-menu"> 
+    
+    <!-- <ion-row *ngIf="usertype=='0'" >
+      <ion-col class="ion-no-padding" >
+        <ion-item  style="--background: #778959;" lines="none">
+          <ion-label>हिंदी/English</ion-label>
+          <ion-toggle (ionChange)="myLanguageChange($event)" checked="{{selectedLangToggle}}"></ion-toggle>
+        </ion-item>
+      </ion-col>
+    </ion-row> -->
+   
+    <ion-content  style="border: 1px solid black;" >
+      <ion-list style="padding-left:2% ;">
+        <ion-menu-toggle auto-hide="true"  >
+          <div >
+          <p style="margin-bottom: -3%;font-size:14px;"  [routerLink]="p.url" *ngFor="let p of appPages;let i=index" >
+       
+              {{p.name | translate}}
+           <ion-icon name="{{p.icon}}" slot="end" style="float: right;margin-right: 2%;" (click)="openSubmenu(i)"> </ion-icon>
+          
+          </p>
+          <!-- <p style="margin-bottom: -3%;font-size:14px;"   *ngFor="let p of mainMenu;let i=index" >
+       
+            {{p.UrlName | translate}}
+         <ion-icon name="{{p.icon}}" slot="end" style="float: right;margin-right: 2%;" (click)="openSubmenu(i)"> </ion-icon>
+        
+        </p> -->
+          <!-- <p *ngFor="let s of submenu" >{{s.name}}</p> -->
+        </div>
+        </ion-menu-toggle>
+       
+      </ion-list>
+    </ion-content>
+
+  </ion-menu>
+
+
+  <ion-router-outlet  id="main-content"></ion-router-outlet>
+</ion-app>

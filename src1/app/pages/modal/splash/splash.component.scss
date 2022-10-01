@@ -1,0 +1,55 @@
+.logo-row {
+    //padding-top: 200px;
+   // padding-bottom: 20px;
+  
+    position: fixed;
+    top: 3%;
+    left: 20%;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+   
+    //padding-right: 10dp;
+    //height: 100%;
+    //display: flex;
+    align-items: center;
+    // justify-content: center;
+    // align-items: center;
+     text-align: center;
+     vertical-align: middle;
+     padding-top: 20%;
+    //transform: translate(-50%, -50%);
+  }
+  // .logo-row {
+  //   //padding-top: 200px;
+  //  // padding-bottom: 20px;
+  //   top: 3%;
+  //   left: 20%;
+  //   margin: 0;
+  //   //width: 60%;
+  //   //height: 100%;
+   
+  //   //padding-right: 10dp;
+  //   //height: 100%;
+  //   //display: flex;
+  //   align-items: center;
+  //   // justify-content: center;
+  //   // align-items: center;
+  //    text-align: center;
+  //    vertical-align: middle;
+  //    padding-top: 20%;
+  //    background: transparent;
+  //   //transform: translate(-50%, -50%);
+  // }
+  // .popover-content{
+  //   //background: transparent;
+  //   //--background: transparent;
+  // }
+  ion-modal .modal-wrapper,.sc-ion-modal-md-h {
+    // background: transparent;
+    // --background: transparent;
+    --width:100vw;
+  }
+  // .ion-overlay-wrapper,.sc-ion-modal-mg{
+  //   background: transparent;
+  // }

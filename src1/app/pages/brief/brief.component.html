@@ -1,0 +1,109 @@
+<ion-header>
+<ion-toolbar color="primary" style="text-align: center;font-weight: 500;">
+  <ion-buttons slot="start" >
+    <ion-back-button defaultHref="home" style="color:#fff;"></ion-back-button>
+  </ion-buttons>
+
+  <ion-title>
+   {{'Aboutfame2'|translate}}
+  </ion-title>
+</ion-toolbar>
+</ion-header>
+<ion-content>
+<ion-card>
+  <ion-card-header>
+  <div id="nav">
+    <nav id="brf1" (click)="show('1')" >{{'brief'|translate}}</nav>
+    <nav (click)="show('2')">{{'whoiswho'|translate}}</nav>
+    <nav (click)="show('3')">{{'fameI'|translate}}</nav>
+    <nav (click)="show('4')">{{'sysArch'|translate}}</nav>
+    <nav (click)="show('5')">{{'timeline'|translate}}</nav>
+  </div>
+  </ion-card-header>
+  <ion-card>
+    <div *ngIf="brief">
+      <p>
+{{'aboutbrief1'| translate}}
+  </p>
+<p>
+{{'aboutbrief2'|translate}}
+</p>
+</div>
+<div *ngIf="details">
+  <table border="1" cellpadding="1" cellspacing="1">
+    <tbody>
+      <tr>
+        <th>{{'briefwhois.Sno'|translate}}</th>
+        <th>{{'briefwhois.name'|translate}}</th>
+        <th>{{'briefwhois.desig'|translate}}</th>
+        <th>{{'briefwhois.role'|translate}}</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td>{{'briefwhois.name1'|translate}}</td>
+        <td>
+        <p>{{'briefwhois.designation1'|translate}}</p>
+        </td>
+        <td>{{'briefwhois.role1'|translate}}</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>{{'briefwhois.name2'|translate}}</td>
+        <td>
+        <p>{{'briefwhois.designation2'|translate}}</p>
+  
+        <p>fame.india@gov.in</p>
+        </td>
+        <td>{{'briefwhois.role2'|translate}}</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>{{'briefwhois.name3'|translate}}</td>
+        <td>
+        <p>{{'briefwhois.designation3'|translate}}</p>
+  
+        <p>aksingh5.ofb@ofb.gov.in</p>
+        </td>
+        <td>{{'briefwhois.role3'|translate}}</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>{{'briefwhois.name4'|translate}}</td>
+        <td>
+        <p>{{'briefwhois.designation4'|translate}}</p>
+  
+        <p>satya@nic.in</p>
+        </td>
+        <td>{{'briefwhois.role4'|translate}}</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>{{'briefwhois.name5'|translate}}</td>
+        <td>
+        <p>{{'briefwhois.designation5'|translate}}</p>
+  
+        <p>thanglina.lal@nic.in</p>
+        </td>
+        <td>{{'briefwhois.role5'|translate}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div *ngIf="fame1">
+  <p>
+  {{'aboutfame11'|translate}}
+</p>
+<p>
+  {{'aboutfame12'|translate}}
+</p>
+</div>
+
+<div *ngIf="sysArch">
+  <img height="350px" src="assets/imgs/sysArch.png"/>
+</div>
+<div *ngIf="fame2">
+  <img height="350px"  src="assets/imgs/fame2.png"/>
+</div>
+</ion-card>
+</ion-card>
+</ion-content>

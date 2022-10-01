@@ -1,0 +1,592 @@
+<ion-header>
+  <ion-toolbar color="primary" style="text-align: center;font-weight: 500;">
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="home" style="color:#fff;"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Buyer Details
+    </ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-card>
+      <table class="table-responsive" cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gdv_buyer" style="width:100%;border-collapse:collapse;">
+        <tbody><tr>
+          <th scope="col">&nbsp;</th><th scope="col">S.No.</th><th scope="col">Model Name</th><th scope="col">Model Variant </th><th scope="col">Model Segment</th><th scope="col">
+                                  Customer Name
+                              </th><th scope="col">Address</th><th scope="col">Mobile No.</th><th scope="col">Email Id</th><th scope="col">State</th><th scope="col">District</th><th scope="col">VIN Chassis No.</th><th scope="col">Dealer Invoice Date</th><th scope="col">Invoice Created On</th><th scope="col">OTP Status</th><th class="Text-Center" scope="col">
+                                  Edit
+                              </th>
+        </tr><tr>
+          <td>
+                                  <span class="aspNetDisabled"><input id="ContentPlaceHolder1_gdv_buyer_chkSelect_0" type="checkbox" name="ctl00$ContentPlaceHolder1$gdv_buyer$ctl02$chkSelect" disabled="disabled"></span>
+                              </td><td class="Text-Center">
+                                  1
+                              </td><td>Magnus</td><td>&nbsp;</td><td>e-2W</td><td>
+                                  <a href="javascript:void(0);" id="btnShow" buyerid="58336">NALLADURAI B </a>
+                              </td><td>7/10A, SUSAI NAGAR, KOTHAIMANGALAM, KODAIMANGALAM(BO),</td><td class="cursorshow">6383125040</td><td>&nbsp;</td><td>Tamil Nadu</td><td>Dindigul</td><td class="cursorshow">MCPM11200AAE01733</td><td class="cursorshow">26-01-2021</td><td class="cursorshow">12-03-2021</td><td>
+                                  <span id="ContentPlaceHolder1_gdv_buyer_lblOTPStatus_0">In-Complete</span>
+                              </td><td class="Text-Center">
+                                  <input type="submit" name="ctl00$ContentPlaceHolder1$gdv_buyer$ctl02$imgedit" value="Edit" id="ContentPlaceHolder1_gdv_buyer_imgedit_0" title="Edit" class="btn btn-success btn-xs">
+                              </td>
+        </tr><tr>
+          <td>
+                                  <span class="aspNetDisabled"><input id="ContentPlaceHolder1_gdv_buyer_chkSelect_1" type="checkbox" name="ctl00$ContentPlaceHolder1$gdv_buyer$ctl03$chkSelect" disabled="disabled"></span>
+                              </td><td class="Text-Center">
+                                  2
+                              </td><td>Magnus</td><td>&nbsp;</td><td>e-2W</td><td>
+                                  <a href="javascript:void(0);" id="btnShow" buyerid="77240">NASEEMA </a>
+                              </td><td>12-10-25, NAGALINGASAMY KOVILSTREET</td><td class="cursorshow">8778075207</td><td>&nbsp;</td><td>Tamil Nadu</td><td>Dindigul</td><td class="cursorshow">MCPM11200ACE03275</td><td class="cursorshow">27-03-2021</td><td class="cursorshow">11-06-2021</td><td>
+                                  <span id="ContentPlaceHolder1_gdv_buyer_lblOTPStatus_1">In-Complete</span>
+                              </td><td class="Text-Center">
+                                  <input type="submit" name="ctl00$ContentPlaceHolder1$gdv_buyer$ctl03$imgedit" value="Edit" id="ContentPlaceHolder1_gdv_buyer_imgedit_1" title="Edit" class="btn btn-success btn-xs">
+                              </td>
+        </tr>
+      </tbody></table>
+    </ion-card>
+    <ion-card>
+      <div class="custom_form brder-rect row form-horizontal" id="mydiv">
+        <h3 class="regi_heading">OEM &amp; Dealer Details</h3>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group">
+                <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">OEM Name:<span style="color: red">*</span></label>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <span id="ContentPlaceHolder1_lblManufature" class="form-control">Ampere Vehicles Private Limited      </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group">
+                <label for="nameoem" class="control-label text-left col-md-4 col-sm-4 col-xs-12">Dealer Name:<span style="color: red">*</span></label>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <span id="ContentPlaceHolder1_lblDealer" class="form-control">Abirami E Bikes</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group">
+                <label for="nameoem" class="control-label text-left col-md-4 col-sm-4 col-xs-12">Dealer Code:<span style="color: red">*</span></label>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <span id="ContentPlaceHolder1_lblDealer_Code" class="form-control">335010029</span>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div id="ContentPlaceHolder1_updmodel">
+	
+                <h3 class="regi_heading">Vehicle Information</h3>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Customer Type/Category:<span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <select name="ctl00$ContentPlaceHolder1$ddlcustomeraddressproof" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlcustomeraddressproof\',\'\')', 0)" id="ContentPlaceHolder1_ddlcustomeraddressproof" class="form-control">
+		<option selected="selected" value="0">Select</option>
+		<option value="1">Individual Cases</option>
+		<option value="2">Proprietory Firms/Agencies</option>
+		<option value="3">Corporate And Partnership Agencies</option>
+		<option value="4">Gov. Department/Defence Supply</option>
+
+	</select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">xEV Model Name/Code:<span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <select name="ctl00$ContentPlaceHolder1$ddlModel" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlModel\',\'\')', 0)" id="ContentPlaceHolder1_ddlModel" class="form-control validate">
+		<option selected="selected" value="0">Select Model</option>
+		<option value="10">ZEAL</option>
+		<option value="74">Magnus</option>
+		<option value="76">Zeal VX1</option>
+		<option value="99">ZEAL-CA</option>
+
+	</select>
+                            <span id="model" style="color: red; display: none;"><small>Please select Model</small></span>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hddnEnergy_Capacity" id="ContentPlaceHolder1_hddnEnergy_Capacity">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="" class="control-label text-left col-md-4 col-sm-4 col-xs-12">Model Variant (if any):</label>
+                        <div class="col-md-8">
+                            <input name="ctl00$ContentPlaceHolder1$txtModelVariant" type="text" id="ContentPlaceHolder1_txtModelVariant" disabled="disabled" class="aspNetDisabled form-control">
+                            <span id="ContentPlaceHolder1_RegularExpressionValidator12" style="color:Red;display:none;">
+                <em><span style="font-size: 8pt; color: red; font-family: Verdana">First character must be alphabet with some special characters(_-.+)</span></em>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="" class="control-label text-left col-md-4 col-sm-4 col-xs-12">Model Segment:</label>
+                        <div class="col-md-8">
+                            <span id="ContentPlaceHolder1_lblSegment"></span>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hddnSegment" id="ContentPlaceHolder1_hddnSegment">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="" class="control-label text-left col-md-4 col-sm-4 col-xs-12"></label>
+                        <div class="col-md-8">
+                        </div>
+                    </div>
+                </div>
+                <div id="ContentPlaceHolder1_divhideshow">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="" class="control-label text-left col-md-4 col-sm-4 col-xs-12">Search Vehicle:<span style="color: red">*</span></label>
+                            <div class="col-md-8">
+                                <input name="ctl00$ContentPlaceHolder1$txtChassisno" type="text" id="ContentPlaceHolder1_txtChassisno" class="form-control" placeholder="Search Vehicle (by Chassis No.)">
+                                <span id="Chassisno" style="color: red; display: none;"><small>Please Search Vehicle (by Chassis No.)</small></span>
+                                <span id="ContentPlaceHolder1_regEmissionNorms" style="display:none;">
+                                                <em><span style="font-size: 8pt; color: red; font-family: Verdana">Valid characters: Alphabets and numbers.</span></em>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="" class="control-label text-left col-md-4 col-sm-4 col-xs-12">Search:</label>
+                            <div class="col-md-8">
+                                <input type="submit" name="ctl00$ContentPlaceHolder1$btnSearch" value="Search" id="ContentPlaceHolder1_btnSearch" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12" style="display: none">
+                        <div class="form-group">
+                            <label for="" class="control-label text-left col-md-4 col-sm-4 col-xs-12">Vehicle Manufacturing Date:<span style="color: red">*</span></label>
+                            <div class="col-md-8">
+                                
+                                <span id="ContentPlaceHolder1_lblManufactureDate" class="form-control"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12" style="display: none">
+                        <div class="form-group">
+                            <label for="" class="control-label text-left col-md-4 col-sm-4 col-xs-12">Model colour:<span style="color: red">*</span></label>
+                            <div class="col-md-8">
+                                
+                                <span id="ContentPlaceHolder1_lblModelColur" class="form-control"></span>
+                                <span id="ModelColur" style="color: red; display: none;"><small>Please select Model</small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12" style="display: none">
+                        <div class="form-group">
+                            <label for="" class="control-label text-left col-md-4 col-sm-4 col-xs-12">Emission Norms:<span style="color: red">*</span></label>
+                            <div class="col-md-8">
+                                
+                                <span id="ContentPlaceHolder1_lblEmission" class="form-control"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12" style="display: none">
+                        <div class="form-group">
+                            <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Motor Chassis No.:<span style="color: red">*</span></label>
+                            <div class="col-md-8 col-sm-8 col-xs-12">
+                                <input name="ctl00$ContentPlaceHolder1$lblChassisNo" type="text" id="ContentPlaceHolder1_lblChassisNo" disabled="disabled" class="aspNetDisabled form-control">
+                                
+                                <span id="ChassisNo" style="color: red; display: none;"><small>Please select Model</small></span>
+                                <span id="ContentPlaceHolder1_RegularExpressionValidator1" style="display:none;">
+                                                <em><span style="font-size: 8pt; color: red; font-family: Verdana">Valid characters: Alphabets and numbers.</span></em>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12" style="display: none">
+                        <div class="form-group">
+                            <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Motor Identification Number:<span style="color: red">*</span></label>
+                            <div class="col-md-8 col-sm-8 col-xs-12">
+
+                                <span id="ContentPlaceHolder1_lblmotorIdentification" class="form-control"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12" style="display: none">
+                        <div class="form-group">
+                            <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Battery Identification Number:<span style="color: red">*</span></label>
+                            <div class="col-md-8 col-sm-8 col-xs-12">
+
+                                <span id="ContentPlaceHolder1_lblBatteryIdentification" class="form-control"></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                
+                <div class="clearfix"></div>
+                <br>
+                <h3 class="regi_heading">Invoice Detail</h3>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Dealer Invoice No.:<span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtDealerInvoice" type="text" id="ContentPlaceHolder1_txtDealerInvoice" class="form-control">
+                            <span style="color: red; display: none;"><small>Please Enter Invoice Number</small></span>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hddnChk" id="ContentPlaceHolder1_hddnChk">
+                            <span id="ContentPlaceHolder1_RegularExpressionValidator2" style="display:none;">
+                                                <em><span style="font-size: 8pt; color: red; font-family: Verdana">Valid special characters with dealer code(space,-_.:/).</span></em>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Dealer Invoice Date:<span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtDealerInvoiceDate" type="text" id="ContentPlaceHolder1_txtDealerInvoiceDate" class="form-control">
+                            
+                            
+                            <span id="ContentPlaceHolder1_RegularExpressionValidator10" style="display:none;">
+                        <em><span style="font-size: 8pt; color: red; font-family: Verdana">Enter date in dd/mm/yyyy format</span></em> 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Number of Vehicle Purchased:<span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtVehiclepurchased" type="text" maxlength="6" id="ContentPlaceHolder1_txtVehiclepurchased" disabled="disabled" class="aspNetDisabled form-control" placeholder="e.g 4">
+                            <span id="ContentPlaceHolder1_RegularExpressionValidator5" style="color:Red;display:none;">
+                                             <em><span style="font-size: 8pt; color: red; font-family: Verdana">Please enter valid number.</span></em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12"><b>Amount Payable by Customer (INR):<span style="color: red">*</span></b></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtTotalPayableCustomer" type="text" maxlength="18" id="ContentPlaceHolder1_txtTotalPayableCustomer" disabled="disabled" class="aspNetDisabled form-control">
+                            <em><b class="warning">Note:</b> <span style="color: red">Amount after deduction of Fame India II incentive</span></em>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Invoice Amt. (INR) <small>(Per Vehicle):</small><span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtInvoiceAmount" type="text" maxlength="15" id="ContentPlaceHolder1_txtInvoiceAmount" class="form-control" placeholder="Rs.00000" onkeypress="return validateNumber(event);">
+                            <em><b class="warning">Note:</b> <span style="color: red">Invoice amount including GST/Actual bill to customer before Fame India II incentive</span></em>
+                            <span id="ContentPlaceHolder1_RegularExpressionValidator3" style="color:Red;display:none;">
+                                             <em><span style="font-size: 8pt; color: red; font-family: Verdana">Please enter numberic value with decimal value upto 2 digits </span></em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12"><b>Admissible Incentive Amt. (INR)</b> <small>(Per Vehicle)</small>:<span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtAmountadjusted" type="text" maxlength="15" id="ContentPlaceHolder1_txtAmountadjusted" disabled="disabled" class="aspNetDisabled form-control" placeholder="Rs.00000" onkeypress="return validateNumber(event);">
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12"><b>Total Invoice Amt. (INR)</b>:<span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtTotalInvoiceAmount" type="text" id="ContentPlaceHolder1_txtTotalInvoiceAmount" disabled="disabled" class="aspNetDisabled form-control">
+                            <span id="ContentPlaceHolder1_RegularExpressionValidator6" style="color:Red;display:none;">
+                                             <em><span style="font-size: 8pt; color: red; font-family: Verdana">Please enter numberic value with decimal value upto 2 digits </span></em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12"><b>Total Admissible Incentive Amt. (INR):</b><span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtTotalAdmissibleIncentive" type="text" id="ContentPlaceHolder1_txtTotalAdmissibleIncentive" disabled="disabled" class="aspNetDisabled form-control">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <h3 class="regi_heading">Customer Information</h3>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoems" class="control-label col-md-4 col-sm-4 col-xs-12"><b>Customer Name:<span style="color: red">*</span></b></label>
+						
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtCustomerName" type="text" id="ContentPlaceHolder1_txtCustomerName" class="form-control">
+							<em><span style="font-size: 8pt; color: black; font-family: Verdana"><b>As mentioned in Aadhaar card.</b></span></em>
+                            <span id="ContentPlaceHolder1_regOEMName" style="display:none;">
+                                            <em><span style="font-size: 8pt; color: red; font-family: Verdana">First character must be alphabet with some special characters (space,&amp; -_.).</span></em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Address:<span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtAddress" type="text" id="ContentPlaceHolder1_txtAddress" class="form-control">
+                            <span id="ContentPlaceHolder1_RegularExpressionValidator8" style="display:none;">
+                                                <em><span style="font-size: 8pt; color: red; font-family: Verdana">Valid special characters with address(space,'-_.:;#()/&amp;).</span></em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+				<div class="clearfix"></div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Landmark:</label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtLandMark" type="text" id="ContentPlaceHolder1_txtLandMark" class="form-control">
+                            <span id="ContentPlaceHolder1_RegularExpressionValidator9" style="display:none;">
+                                                <em><span style="font-size: 8pt; color: red; font-family: Verdana">Valid special characters with landmark(space,-_.:()/).</span></em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">State:<span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <select name="ctl00$ContentPlaceHolder1$ddlState" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlState\',\'\')', 0)" id="ContentPlaceHolder1_ddlState" class="form-control">
+		<option selected="selected" value="0">Select</option>
+		<option value="1">Andaman and Nicobar Islands</option>
+		<option value="2">Andhra Pradesh</option>
+		<option value="3">Arunachal Pradesh</option>
+		<option value="4">Assam</option>
+		<option value="5">Bihar</option>
+		<option value="6">Chandigarh</option>
+		<option value="7">Chhattisgarh</option>
+		<option value="10">Delhi</option>
+		<option value="11">Goa</option>
+		<option value="12">Gujarat</option>
+		<option value="13">Haryana</option>
+		<option value="14">Himachal Pradesh</option>
+		<option value="15">Jammu Kashmir</option>
+		<option value="16">Jharkhand</option>
+		<option value="17">Karnataka</option>
+		<option value="18">Kerala</option>
+		<option value="37">Ladakh</option>
+		<option value="19">Lakshadweep</option>
+		<option value="20">Madhya Pradesh</option>
+		<option value="21">Maharashtra</option>
+		<option value="22">Manipur</option>
+		<option value="23">Meghalaya</option>
+		<option value="24">Mizoram</option>
+		<option value="25">Nagaland</option>
+		<option value="26">Odisha</option>
+		<option value="27">Puducherry</option>
+		<option value="28">Punjab</option>
+		<option value="29">Rajasthan</option>
+		<option value="30">Sikkim</option>
+		<option value="31">Tamil Nadu</option>
+		<option value="32">Telangana</option>
+		<option value="38">The Dadra and Nagar Haveli and Daman and Diu</option>
+		<option value="33">Tripura</option>
+		<option value="34">Uttar Pradesh</option>
+		<option value="35">Uttarakhand</option>
+		<option value="36">West Bengal</option>
+
+	</select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">District:<span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <select name="ctl00$ContentPlaceHolder1$ddlDistrict" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlDistrict\',\'\')', 0)" id="ContentPlaceHolder1_ddlDistrict" class="form-control">
+		<option selected="selected" value="0">Select</option>
+
+	</select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">City:</label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <select name="ctl00$ContentPlaceHolder1$ddlCity" id="ContentPlaceHolder1_ddlCity" class="form-control">
+		<option value="0">Select</option>
+
+	</select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Mobile Number:<span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtMobileNo" type="text" maxlength="10" id="ContentPlaceHolder1_txtMobileNo" class="form-control" onkeypress="return validateNumber(event);" placeholder="9999999999">
+                            <span id="ContentPlaceHolder1_regAuthorityphoneno" style="color:Red;display:none;">
+                                             <em><span style="font-size: 8pt; color: red; font-family: Verdana">Please enter valid Mobile number.</span></em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Email Id:</label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <input name="ctl00$ContentPlaceHolder1$txtEmail" type="text" id="ContentPlaceHolder1_txtEmail" class="form-control" placeholder="Enter Valid Email.">
+                            <span id="ContentPlaceHolder1_regOfficeEmailID" style="color:Red;display:none;">
+                                   <em><span style="font-size: 8pt; color: red; font-family: Verdana">Please enter valid email id.</span></em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <h3 class="regi_heading">Customer Identification Information</h3>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Customer ID:<span style="color: red">*</span></label>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <select name="ctl00$ContentPlaceHolder1$ddlCustomerProof" id="ContentPlaceHolder1_ddlCustomerProof" class="form-control">
+		<option selected="selected" value="0">Select Id Proof</option>
+		<option value="1">PAN Card</option>
+		<option value="2">Aadhaar Card</option>
+		<option value="7">Purchases Order</option>
+
+	</select>
+                        </div>
+                    </div>
+                </div>
+            
+</div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group">
+                <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Customer ID No.:<span style="color: red">*</span></label>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <input name="ctl00$ContentPlaceHolder1$txtCustomerIDNo" type="text" maxlength="12" id="ContentPlaceHolder1_txtCustomerIDNo" class="form-control">
+                    <span id="ContentPlaceHolder1_RegularExpressionValidator11" style="display:none;">
+                                                <em><span style="font-size: 8pt; color: red; font-family: Verdana">Valid characters: Alphabets and numbers.</span></em>
+                    </span>
+
+                    <input type="hidden" name="ctl00$ContentPlaceHolder1$hidCustomerIDValue" id="ContentPlaceHolder1_hidCustomerIDValue">
+                </div>
+                <div id="divButton" style="display: none; position: relative; float: right; right: 17px;
+
+top: 8px;">
+                    <input type="button" id="btnVerify" value="Verify Aadhar" class="btn btn-success btn-xs">
+                    <label id="lblVerify" style="display: none">Verified</label>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 FileUploadContainer">
+            <div class="form-group">
+                <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Customer ID Copy:<span style="color: red">*</span></label>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <input type="file" name="ctl00$ContentPlaceHolder1$fileupload1" id="ContentPlaceHolder1_fileupload1" class="form-control">
+                    <span id="ContentPlaceHolder1_lblfileupload1"></span>
+                    <em><span style="font-size: 8pt; color: black; font-family: Verdana"><b>Upload Customer ID Copy (pdf only &amp; max. 2 MB size)</b></span></em>
+                    <span id="ContentPlaceHolder1_cvDealerListFile" style="display:none;">
+                           <em><span style="font-size: 8pt; color: red; font-family: Verdana">Please upload only pdf file (without any special character).</span></em>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group">
+                <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Additional Customer  ID :</label>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <select name="ctl00$ContentPlaceHolder1$ddlSecondIDProof" id="ContentPlaceHolder1_ddlSecondIDProof" class="form-control">
+	<option selected="selected" value="0">Select</option>
+	<option value="1">PAN Card</option>
+	<option value="3">Driving Licence</option>
+	<option value="5">Passport</option>
+	<option value="6">Electricity/Telephone bill</option>
+	<option value="7">Purchases Order</option>
+
+</select>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group">
+                <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Customer ID No.:</label>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <input name="ctl00$ContentPlaceHolder1$txtCustomersecondID" type="text" id="ContentPlaceHolder1_txtCustomersecondID" class="form-control" onkeyup="this.value = this.value.toUpperCase();">
+                    <span id="ContentPlaceHolder1_RegularExpressionValidator13" style="display:none;">
+                                                <em><span style="font-size: 8pt; color: red; font-family: Verdana">Valid characters: Alphabets and numbers.</span></em>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 FileUploadContainer">
+            <div class="form-group">
+                <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12">Customer ID Copy:</label>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <input type="file" name="ctl00$ContentPlaceHolder1$fileupload2" id="ContentPlaceHolder1_fileupload2" class="form-control">
+                    <span id="ContentPlaceHolder1_lblfileupload2"></span>
+                    <em><span style="font-size: 8pt; color: black; font-family: Verdana"><b>Upload proof Copy (pdf only and max. 2 MB size)</b></span></em>
+                    <span id="ContentPlaceHolder1_CustomValidator1" style="display:none;">
+                           <em><span style="font-size: 8pt; color: red; font-family: Verdana">Please upload only pdf file (without any special character).</span></em>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group">
+                <label for="nameoem" class="control-label col-md-4 col-sm-4 col-xs-12"></label>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                </div>
+            </div>
+        </div>
+		
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="checkbox">
+                <label class="label-inline">
+                    <b><span style="color: red">Note : </span>Please upload PDF file without any special characters.</b>
+                </label>
+            </div>
+        </div>
+	
+        <div class="col-md-12 col-sm-12 col-xs-12">
+             <div class="checkbox" style="display: none" id="divAgreeACK">
+                    <span class="pull-left"><input id="ContentPlaceHolder1_chbTermConditions" type="checkbox" name="ctl00$ContentPlaceHolder1$chbTermConditions"></span>
+                    <label class="label-inline">&nbsp;I do agree to the Consent for Authentication.</label>
+                    <br>
+                    <span id="ContentPlaceHolder1_CustomValidator2" style="visibility:hidden;">
+                             <em><span style="font-size: 8pt; color: red; font-family: Verdana">You must select this terms &amp; conditions box to proceed.</span></em></span>
+                </div>
+            <div class="checkbox">
+                <label class="label-inline">
+                    <span class="pull-left"><input id="ContentPlaceHolder1_checkbox" type="checkbox" name="ctl00$ContentPlaceHolder1$checkbox"></span>
+                    &nbsp;Declaration :<span class="star" style="color: red">*</span>We declare that the above information pertaining to sale of xEVs under FAME India scheme is completely and fully in accordance with the test certification of the model obtained from the authorized test agency. We further certify that the above information is completely true. We completely understand that in case of any wrong declaration/concealment in this regard, we shall be liable to any punitive action to be imposed by NAB/DHI.</label>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br>
+        <div class="text-center row" id="divBothButton" style="display: none">
+            <input type="submit" name="ctl00$ContentPlaceHolder1$btnSave" value="Continue"  id="ContentPlaceHolder1_btnSave" class="btn btn-primary">&nbsp;&nbsp;
+                <input type="submit" name="ctl00$ContentPlaceHolder1$btnBack" value="BACK" id="ContentPlaceHolder1_btnBack" class="btn btn-success">
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$hddnState" id="ContentPlaceHolder1_hddnState">
+			</div>
+            <br>
+            <br>
+            
+            <em><span style="font-size: 8pt; color: #459300; font-weight: bolder; font-family: Verdana">
+                <span id="ContentPlaceHolder1_lblmsg" style="font-size:Medium;"></span>
+            </span></em>
+        
+        <br>
+        <br>
+    </div>
+    </ion-card>
+  </ion-content>

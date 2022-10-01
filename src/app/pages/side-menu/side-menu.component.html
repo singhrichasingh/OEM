@@ -1,0 +1,19 @@
+<ion-menu menu-id="myMenu" contentId="main-content" side="start" class="my-custom-menu"> 
+    
+
+ 
+  <ion-content id="main-content" style="--background: #778959;border: 1px solid black;" >
+    <ion-list style="padding-left:2% ;">
+
+       
+        <p style="margin-bottom: -3%;font-size:14px;" *ngFor="let p of appPages" (click)="show()">
+     
+            {{p}}
+       
+          </p>
+     
+     
+    </ion-list>
+  </ion-content>
+
+</ion-menu>

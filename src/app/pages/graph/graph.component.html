@@ -1,0 +1,110 @@
+<!-- <ion-header>
+  <ion-toolbar color="primary" style="text-align: center;font-weight: 500;">
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="/home" style="color:#fff;"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Graph
+    </ion-title>
+  </ion-toolbar>
+  </ion-header> -->
+<ion-content style="padding-top:3%">
+  <ion-title style="text-align: center;">Graph</ion-title>
+  <div>
+    <ion-item>
+      <ion-label>Select State</ion-label>
+      <ion-select placeholder="Delhi" (ionChange)="getData($event)">
+        <ion-select-option *ngFor="let s of selectState" value="{{s.id}}" >{{s.state}}</ion-select-option>
+  
+      </ion-select>
+    </ion-item>
+  </div>
+  <div>
+    <ion-item>
+      <ion-label>Select Graph Type</ion-label>
+      <ion-select placeholder="Bar" (ionChange)="changeChart($event)" >
+        <ion-select-option  value="bar" >Bar</ion-select-option>
+        <ion-select-option  value="grant" >Grantt</ion-select-option>
+        <ion-select-option  value="heat" >Heat</ion-select-option>
+        <ion-select-option  value="histo" >Histogram</ion-select-option>
+       
+      </ion-select>
+    </ion-item>
+  </div>
+  <!-- <div style="display: block"> -->
+    <div >
+    <canvas #barCanvas style="position: relative; height:25vh; width:40vw" >
+    </canvas>
+  </div>
+
+  <!-- <div *ngIf="showGantt">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [dataLabels]="chartOptions.dataLabels"
+      [plotOptions]="chartOptions.plotOptions"
+      [yaxis]="chartOptions.yaxis"
+      [legend]="chartOptions.legend"
+      [fill]="chartOptions.fill"
+      [stroke]="chartOptions.stroke"
+      [tooltip]="chartOptions.tooltip"
+      [xaxis]="chartOptions.xaxis"
+    ></apx-chart>
+  </div> -->
+
+    <div *ngIf="showChartHeat" style="margin-top: -32%;">
+
+
+      <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [dataLabels]="chartOptions.dataLabels"
+        [title]="chartOptions.title"
+        [colors]="chartOptions.colors"></apx-chart>
+    </div>
+    <div>
+      <ion-row>
+        <ion-col>
+          <p>
+           L1 - 2Wheelers
+          </p>
+        </ion-col>
+        <ion-col>
+        <p>
+        L2 - 2Wheelers
+      </p>
+        </ion-col>
+        <ion-col>
+          <p>
+         L5M - 3Wheelers
+        </p>
+        </ion-col>
+        <ion-col>
+          <p>
+        L5N - 3Wheelers
+      </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p>
+        e-cart - 3Wheelers
+      </p>
+        </ion-col>
+        <ion-col>
+          <p>
+         e-rickshaw - 3Wheelers
+        </p>
+        </ion-col>
+        <ion-col>
+          <p>
+          M1 - 4Wheelers
+        </p>
+        </ion-col>
+      </ion-row>
+    </div>
+  <!-- </div> -->
+  <div style="text-align: center;">
+  <ion-button (click)="close()">Close</ion-button>
+</div>
+</ion-content>

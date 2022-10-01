@@ -1,0 +1,38 @@
+<ion-header >
+  <ion-toolbar color="primary" style="text-align: center;font-weight: 500;">
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="home" style="color:#fff;"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      {{'login.text1'|translate}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+  <ion-card style="margin-left:15vw;height: 80vh;width:70vw;margin-top: 5vh;padding:12% 4% 0 4%;border: 1px solid green;background: #f8f4f48f;">
+<ion-label style="font-size: 1.5em;font-weight: 500;">
+  {{'login.text2'|translate}} <sub style="bottom: 0;font-size: 1.5em;color: red;">*</sub>:
+</ion-label>
+<ion-input style="border: 1px solid rgb(108, 175, 8);margin-bottom: 5%;background: white" placeholder="Username">
+
+</ion-input>
+<ion-label style="font-size: 1.5em;font-weight: 500;;">
+  {{'login.text3'|translate}} <sub style="bottom: 0;font-size: 1.5em;color: red;">*</sub>:
+</ion-label>
+  <ion-input style="border: 1px solid rgb(108, 175, 8);background: white" placeholder="Password">
+ </ion-input>
+ <br/>
+ <br/>
+ <ion-input style="border: 1px solid red;color:rgb(62, 99, 6);font-size: 1.5em;width:50%;display: inline-block;" readonly value="7WB6U0"></ion-input><ion-icon style="font-size:2.5em;color:purple" name="refresh-outline"></ion-icon>
+ <p style="color:red;font-size:1.03em">{{'login.text4'|translate}}</p>
+ <ion-input style="border: 1px solid rgb(108, 175, 8);background: white" placeholder="Captcha">
+</ion-input>
+<br/>
+<br/>
+<ion-button style="border: 1px solid rgb(103, 138, 50);--background:#20c938;width: 40vw;margin-left: 11vw" expand="block" type="submit">{{'login.text5'|translate}}
+</ion-button>
+<div style="text-align: center;">
+<a [routerLink]="['/home']" > &lt;&lt;&lt; {{'login.text6'|translate}}</a>
+</div>
+</ion-card>
+</ion-content>

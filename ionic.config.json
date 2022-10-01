@@ -1,0 +1,7 @@
+{
+  "name": "oem",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

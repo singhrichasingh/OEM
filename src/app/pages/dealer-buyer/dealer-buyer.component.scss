@@ -1,0 +1,37 @@
+#nav>nav{
+    background: blue;
+    width:45vw;
+    color:white;
+    padding: 1.2%;
+}
+#nav>nav:hover{
+
+  background: white;
+  border:1px solid blue;
+  color: black;
+    padding: 1.2%;
+}
+table{
+    width:100%
+
+}
+table tr{
+    padding:2%;
+    text-align:center;
+    
+}
+h3{
+    background: rgb(48, 175, 248);
+    font-size: medium;
+   // padding:%
+}
+.custom_form {
+    width: 100%;
+    float: left;
+    padding: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.brder-rect {
+    border: 1px solid #ddd;
+}

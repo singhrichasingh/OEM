@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar color="primary" style="text-align: center;font-weight: 500;">
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="home" style="color:#fff;"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      {{'policy'|translate}}
+    </ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <div id="nav">
+          <nav id="brf1" (click)="show('1')" >{{'policyDoc'|translate}}</nav>
+          <nav (click)="show('2')">{{'policyProcedure'|translate}}</nav>
+        </div>
+        </ion-card-header>
+    <ion-card style="padding: 2%;">
+    <div *ngIf="nonDoc" class="content-div">
+      <h3 id="mainContent_hparentId" class="page_heading">{{'policyDoc'|translate}}</h3>
+      <p>
+        <a href="https://fame2.heavyindustry.gov.in/WriteReadData/userfiles/8th March 2019 Gazette Notification FAME-II.pdf" target="_blank">'
+          {{'policyLinks.linktext1'|translate}}
+        <img src="../../../assets/imgs/pdf-icon.jpeg" title="View Document" width="15" alt="View Document" height="15">
+        (512  Kb)
+      </a>
+    </p>
+
+<p>
+  <a href="https://fame2.heavyindustry.gov.in/WriteReadData/userfiles/document 28mar2019.pdf" target="_blank">
+    {{'policyLinks.linktext2'|translate}}
+     <img src="../../../assets/imgs/pdf-icon.jpeg" title="View Document" width="15" alt="View Document" height="15">
+     (340  Kb)II.</a>
+    </p>
+
+<p><a href="https://fame2.heavyindustry.gov.in/WriteReadData/userfiles/227493.pdf" target="_blank">
+  {{'policyLinks.linktext3'|translate}}
+</a>
+</p>
+
+<p>
+  <a href="https://fame2.heavyindustry.gov.in/WriteReadData/userfiles/Gazette for Scheme Extension.pdf" target="_blank">
+    {{'policyLinks.linktext4'|translate}}
+  </a>
+</p>
+
+  </div>
+
+  <div *ngIf="!nonDoc" class="content-div">
+    <h3 id="mainContent_hparentId" class="page_heading">{{'policyProcedure'|translate}}</h3>
+    <p>
+      <a href="/WriteReadData/userfiles/DHI_revisioninservicecentres.pdf" target="_blank">
+      1. {{'policyLinks.linktext5'|translate}}
+      <img src="../../../assets/imgs/pdf-icon.jpeg" title="View Document" width="15" alt="View Document" height="15">
+      (234  Kb)</a>
+    </p>
+
+<p>
+  <a href="/WriteReadData/userfiles/Operational Guidelien FAME PHASE-II.pdf" target="_blank">
+  2. {{'policyLinks.linktext6'|translate}}
+  <img src="../../../assets/imgs/pdf-icon.jpeg" title="View Document" width="15" alt="View Document" height="15">
+  (105  Kb)-II
+</a>
+</p>
+
+<p>
+  <a href="/WriteReadData/userfiles/guideline.pdf" target="_blank">
+    3. {{'policyLinks.linktext7'|translate}}
+  </a> &nbsp;</p>
+
+</div>
+</ion-card>
+</ion-card>
+  </ion-content>

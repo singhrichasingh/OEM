@@ -1,0 +1,28 @@
+table{
+    width:100%
+
+}
+table tr,th{
+    padding:2%;
+    text-align:center;
+    
+}
+#nav>nav{
+    background: blue;
+    width:45vw;
+    color:white;
+    padding: 1.2%;
+    height: 10vw;
+}
+#nav>nav:hover{
+
+  background: white;
+  border:1px solid blue;
+  color: black;
+    padding: 1.2%;
+}
+p{
+    padding:2% ;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}

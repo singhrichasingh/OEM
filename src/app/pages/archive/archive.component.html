@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="primary" style="text-align: center;font-weight: 500;">
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="home" style="color:#fff;"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      {{'archive'|translate}}
+    </ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-card>
+      <div class="content-div">
+				<div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <div class="form-group" >
+                           <label for="Archive">{{'archiveForm.text1'|translate}} :</label>
+                            <select style ="margin-left: 3%; font-size: 1.2em;" name="ctl00$mainContent$ddlArchivelist" id="mainContent_ddlArchivelist" class="form-control">
+	<option value="0">{{'archiveForm.text1'|translate}}</option>
+	<option selected="selected" value="2">{{'archiveForm.text2'|translate}}</option>
+
+</select>
+                        </div>
+						</div>
+
+						<div class="col-md-3 col-xs-12" style="margin-top: 6%;">
+                        <div class="form-group">
+                            <label for="to_date">{{'archiveForm.text3'|translate}} :</label>
+                            <input  style ="margin-left: 3%; font-size: 1.2em;" name="ctl00$mainContent$txtStartDate" type="text" value="10/11/2021" maxlength="10" id="mainContent_txtStartDate" class="form-control" placeholder="DD/MM/YYYY">
+                            
+                            
+                            
+
+                        </div>
+						</div>
+
+						<div class="col-md-3 col-xs-12" style="margin-top: 6%;">
+                        <div class="form-group">
+                            <label for="to_date">{{'archiveForm.text4'|translate}} :</label>
+                            <input  style ="margin-left: 3%; font-size: 1.2em;" name="ctl00$mainContent$txtEndDate" type="text" value="13/11/2021" maxlength="10" id="mainContent_txtEndDate" class="form-control" placeholder="DD/MM/YYYY">
+                        </div>
+						</div>
+                         <div class="col-md-3 col-xs-12 pt27" style="margin-top: 6%;">
+                                <ion-button type="submit" name="ctl00$mainContent$btnSearch" value="Search" id="mainContent_btnSearch" class="btn btn-success">
+                                  {{'archiveForm.text5'|translate}}
+                                </ion-button>
+                                </div>
+						</div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+    </ion-card>
+  </ion-content>

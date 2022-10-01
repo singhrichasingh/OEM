@@ -1,0 +1,187 @@
+<ion-header>
+  <ion-toolbar color="primary" style="text-align: center;font-weight: 500;">
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="home" style="color:#fff;"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      {{'more'|translate}}
+    </ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <div id="nav">
+          <nav id="brf1" (click)="show('1')" >{{'privacyPolicy'|translate}} </nav>
+          <nav (click)="show('2')">{{'disclaimer'|translate}}</nav>
+          <nav (click)="show('3')">{{'tandc'|translate}}</nav>
+          <nav (click)="show('4')">{{'copyRight'|translate}}</nav>
+          <nav (click)="show('5')">{{'hyperlinkPolicy'|translate}}</nav>
+          <nav (click)="show('6')">{{'help'|translate}}</nav>
+        </div>
+      </ion-card-header>
+      <ion-card-content>
+  <ion-card>
+
+ <div *ngIf="privacy">
+   <div class="content-div">
+  <h3 id="mainContent_hparentId" class="page_heading"></h3>
+  <p>{{'tandcPrivarcyPolicy1'|translate}}</p>
+
+<p><strong>{{'tandcPrivarcyPolicy2'|translate}}:</strong></p>
+
+<p>{{'tandcPrivarcyPolicy3'|translate}}</p>
+
+<p>{{'tandcPrivarcyPolicy4'|translate}}</p>
+
+<p><strong>{{'tandcPrivarcyPolicy5'|translate}}</strong></p>
+
+<p>{{'tandcPrivarcyPolicy6'|translate}}</p>
+
+<p><strong>{{'tandcPrivarcyPolicy7'|translate}}</strong></p>
+
+<p>{{'tandcPrivarcyPolicy8'|translate}}</p>
+
+<p><strong>{{'tandcPrivarcyPolicy9'|translate}}</strong></p>
+
+<p>{{'tandcPrivarcyPolicy10'|translate}}</p>
+
+<p>{{'tandcPrivarcyPolicy11'|translate}}</p>
+</div>
+</div>
+
+<div *ngIf="disc">
+  <div class="content-div">
+  <h3 id="mainContent_hparentId" class="page_heading"></h3>
+  <p>{{'tandcPrivarcydisc'|translate}}</p>
+</div>
+</div>
+
+ <div *ngIf="termsc">
+  <div class="content-div">
+    <h3 id="mainContent_hparentId" class="page_heading"></h3>
+    <p>{{'tandcPrivarcytnc1'|translate}}</p>
+
+<p>{{'tandcPrivarcytnc2'|translate}}</p>
+
+<p>{{'tandcPrivarcytnc3'|translate}}</p>
+
+<p>{{'tandcPrivarcytnc4'|translate}}</p>
+
+<p>{{'tandcPrivarcytnc5'|translate}}</p>
+
+<p>{{'tandcPrivarcytnc6'|translate}}</p>
+
+</div>
+ </div>
+
+ <div *ngIf="copy">
+   <div class="content-div">
+  <h3 id="mainContent_hparentId" class="page_heading"></h3>
+  <p>{{'tandcPrivarcycopyright'|translate}}</p>
+
+</div>
+</div>
+ 
+ <div *ngIf="link">
+   <div class="content-div">
+  <h3 id="mainContent_hparentId" class="page_heading"></h3>
+  <p>{{'tandcPrivarcyhyperlink1'|translate}}</p>
+
+<p>{{'tandcPrivarcyhyperlink1'|translate}}</p>
+
+</div>
+</div>
+ 
+<div *ngIf="help">
+  <div class="content-div">
+  <h3 id="mainContent_hparentId" class="page_heading"></h3>
+  <p>{{'helpPolicy.text1'|translate}}</p>
+
+<p>{{'helpPolicy.text2'|translate}}</p>
+
+<p>{{'helpPolicy.text3'|translate}}</p>
+<div id="table">
+<table border="1">
+<tbody>
+<tr>
+<th>{{'helpPolicy.text4'|translate}}</th>
+<th>{{'helpPolicy.text5'|translate}}</th>
+</tr>
+<tr>
+<td>{{'helpPolicy.text6'|translate}}</td>
+<td><a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=428D5727-43AB-4F24-90B7-A94784AF71A4&amp;displaylang=en" target="_blank" title="External Link thats open in new window"><img alt="Power point" src="http://45.115.99.199/didm_new/images/powerpoint.png" style="height:24px; width:24px">{{'helpPolicy.text7'|translate}}&nbsp;</a>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>{{'helpPolicy.text8'|translate}}</td>
+<td><a href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank" title="External Link thats open in new window"><img alt="PDF" src="http://45.115.99.199/didm_new/images/pdf.png" style="height:24px; width:24px">{{'helpPolicy.text9'|translate}}&nbsp;</a></td>
+</tr>
+<tr>
+<td>{{'helpPolicy.text10'|translate}}</td>
+<td><a href="http://get.adobe.com/flashplayer/" target="_blank" title="External Link thats open in new window"><img alt="Flash" src="http://45.115.99.199/didm_new/images/red.png" style="height:24px; width:24px">{{'helpPolicy.text11'|translate}}&nbsp;</a></td>
+</tr>
+<tr>
+<td>{{'helpPolicy.text12'|translate}}</td>
+<td><a href="http://www.microsoft.com/downloads/details.aspx?familyid=941b3470-3ae9-4aee-8f43-c6bb74cd1466&amp;displaylang=en" target="_blank" title="External Link thats open in new window"><img alt="Word document" src="http://45.115.99.199/didm_new/images/Word.png" style="height:24px; width:24px">{{'helpPolicy.text13'|translate}}&nbsp;</a></td>
+</tr>
+<tr>
+<td>{{'helpPolicy.text14'|translate}}</td>
+<td><a href="http://windows.microsoft.com/en-IN/windows/windows-media-player" target="_blank" title="External Link thats open in new window"><img alt="" src="http://45.115.99.199/didm_new/images/m.png" style="height:18px; width:23px">{{'helpPolicy.text15'|translate}}&nbsp;</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>{{'helpPolicy.text16'|translate}}</p>
+
+<p>{{'helpPolicy.text17'|translate}}</p>
+
+<p>{{'helpPolicy.text18'|translate}}</p>
+
+<p>{{'helpPolicy.text19'|translate}}</p>
+
+<ul>
+<li>{{'helpPolicy.text20'|translate}}</li>
+<li>{{'helpPolicy.text21'|translate}}</li>
+<li>{{'helpPolicy.text22'|translate}}</li>
+</ul>
+
+<p>{{'helpPolicy.text23'|translate}}.</p>
+
+<p>{{'helpPolicy.text24'|translate}}</p>
+
+<p>{{'helpPolicy.text25'|translate}}</p>
+
+<ul>
+<li><img alt="" src="http://45.115.99.199/didm_new/images/c.png" style="height:20px; width:24px">{{'helpPolicy.text26'|translate}}</li>
+<li><img alt="normal" src="http://45.115.99.199/didm_new/images/d.png" style="height:20px; width:24px">{{'helpPolicy.text27'|translate}}</li>
+<li><img alt="Increase" src="http://45.115.99.199/didm_new/images/e.png" style="height:20px; width:24px">{{'helpPolicy.text28'|translate}}</li>
+</ul>
+
+<p>{{'helpPolicy.text29'|translate}}</p>
+
+<p>{{'helpPolicy.text30'|translate}}</p>
+
+<ul>
+<li>{{'helpPolicy.text31'|translate}}</li>
+<li>{{'helpPolicy.text32'|translate}}</li>
+</ul>
+
+<p>{{'helpPolicy.text33'|translate}}</p>
+
+<p>{{'helpPolicy.text34'|translate}}</p>
+
+<p>{{'helpPolicy.text35'|translate}}</p>
+
+<ul>
+<li><img alt="" src="http://45.115.99.199/didm_new/images/a.png" style="height:16px; width:21px">{{'helpPolicy.text36'|translate}}</li>
+<li><img alt="" src="http://45.115.99.199/didm_new/images/f.png" style="height:20px; width:24px">{{'helpPolicy.text37'|translate}}</li>
+</ul>
+
+</div>
+</div>
+  </ion-card>
+ </ion-card-content>
+        </ion-card>
+  </ion-content>
